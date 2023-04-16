@@ -11,7 +11,7 @@ def home():
 
 @app.route('/rewards')
 def rewards():
-    return render_template("../Web/reward.html")
+    return render_template("reward.html")
     
 
 if __name__ == '__main__':
