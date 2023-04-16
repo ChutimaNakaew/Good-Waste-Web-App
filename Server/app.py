@@ -1,17 +1,17 @@
 import os
 from flask import Flask, render_template
 
-app = Flask(__name__,template_folder="")
+app = Flask(__name__,template_folder="../Web")
 
 
 @app.route('/home')
 def home():
-   return render_template("./Web/index.html")
+   return render_template("index.html")
     
 
 @app.route('/rewards')
 def rewards():
-    return render_template("./Web/reward.html")
+    return render_template("reward.html")
     
 
 if __name__ == '__main__':
