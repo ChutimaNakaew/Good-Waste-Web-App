@@ -4,5 +4,5 @@ WORKDIR /app
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
-EXPOSE 8088
+EXPOSE 8081
 CMD ["python", "app.py"]
