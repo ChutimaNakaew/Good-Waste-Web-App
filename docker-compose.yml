@@ -6,8 +6,8 @@ services:
       - "8081:80"
     container_name: frontend
   server:
-    build: .
+    build: ./Server
     image: chxtima/image-backend-goodwaste:lastest
     ports:
-      - "8000:80"
+      - "8088:80"
     container_name: backend
