@@ -1,0 +1,13 @@
+services:
+  web:
+    build: ./Web
+    image: chxtima/image-frontend-goodwaste:lastest
+    ports:
+      - "8081:80"
+    container_name: frontend
+  server:
+    build: ./Server
+    image: chxtima/image-backend-goodwaste:lastest
+    ports:
+      - "8088:80"
+    container_name: backend
