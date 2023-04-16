@@ -22,7 +22,7 @@ pipeline{
         stage("work"){
             steps{
                 echo "running image"
-                sh 'docker run -d --name backend -p 8088:80 chxtima/image-backend-goodwaste:lastest'
+                sh 'docker run -d --name backend -p 8000:80 chxtima/image-backend-goodwaste:lastest'
                 sh 'docker run -d --name frontend -p 8081:80 chxtima/image-frontend-goodwaste:lastest'
             }
         }
