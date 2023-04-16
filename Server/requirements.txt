@@ -1,1 +1,8 @@
 flask
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python-headless
+Pillow
+numpy
+matplotlib
