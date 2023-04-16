@@ -9,5 +9,5 @@ services:
     build: .
     image: chxtima/image-backend-goodwaste:lastest
     ports:
-      - "8088:80"
+      - "8000:80"
     container_name: backend
