@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid font">
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn.discordapp.com/attachments/732230383881420810/1097201930670981200/Good-removebg-preview.png" width="100" height="100" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="https://cdn.discordapp.com/attachments/732230383881420810/1097201930670981200/Good-removebg-preview.png" width="60" height="60" />
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav justify-content-end flex-grow-1">
+            <button class="nav-item btn btn-color">
+              <a class="nav-link btn-txt" aria-current="page" href="#">Dashboard</a>
+            </button>
+            <button class="nav-item btn btn-color">
+              <a class="nav-link btn-txt" aria-current="page" href="#">แลกแต้ม</a>
+            </button>
+            <button class="nav-item btn btn-color">
+              <a class="nav-link btn-txt" aria-current="page" href="#">ทิ้งขยะอย่างไร ?</a>
+            </button>
+            <button class="nav-item btn btn-color">
+              <a class="nav-link btn-txt" aria-current="page" href="#">แคมเปญ</a>
+            </button>
+            <button class="nav-item btn btn-color">
+              <a class="nav-link btn-txt" aria-current="page" href="#">ออกจากระบบ</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="color-green1 text-center mt-5">Dash<span class="color-green2">board</span></h1>
+
+  <div class="container text-center mt-5">
+    <div class="row justify-content-center">
+      <div class="col-6 txt-blue1">
+        แต้มของคุณ
+      </div>
+      <div class="col-6 txt-blue1">
+        จำนวนที่ส่งมอบ
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6 txt-blue2">
+        210 คะแนน
+      </div>
+      <div class="col-6 txt-blue2">
+        29 ครั้ง
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-6 txt-black">
+        แต้มของคุณ
+        <img class="mt-5" src="https://cdn.discordapp.com/attachments/732230383881420810/1097214200843091980/image.png" width="604" height="312" />
+      </div>
+      <div class="col-6 txt-black text-end">
+        <div class="text-start txt-m">ปริมาณขยะที่ส่งมอบ</div>
+        <img class="text-end mt-5" src="https://cdn.discordapp.com/attachments/732230383881420810/1097215184843575326/image.png" width="473" height="281"/>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&display=swap');
+
+  .font {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+  }
+
+  .color-green1 {
+    color: #04A952;
+  }
+
+  .color-green2 {
+    color: #09BD87;
+  }
+
+  .btn-color {
+    background-image: linear-gradient(to right, #5DCB62 0%, #5784DA 51%, #5DCB62 100%);
+    margin: 15px;
+    text-align: center;
+    background-size: 200% auto;
+    box-shadow: 0 0 5px 0 #717171;
+    border-radius: 50px;
+    display: block;
+  }
+
+  .btn-txt {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .txt-blue1 {
+    font-size: 28px;
+    color: #0040BD;
+  }
+
+  .txt-blue2 {
+    font-size: 30px;
+    color: #5083E6;
+  }
+  .txt-black {
+    font-size: 28px;
+    color: #3d3d3d;
+    font-weight: 500;
+  }
+  .txt-m{
+    margin-left: 100px;
+  }
+</style>
+
+</html>
