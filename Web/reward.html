@@ -16,33 +16,66 @@
         <title>Reward</title>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-white">
+        <nav class="navbar fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand" href="#">
                     <img
                         src="https://cdn.discordapp.com/attachments/732230383881420810/1097201930670981200/Good-removebg-preview.png"
-                        alt="" width="100" height="100" class="d-inline-block
-                        align-text-top">
-
+                        width="100" height="100" />
                 </a>
                 <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent"
-                    aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle
+                    navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/732230383881420810/1097201930670981200/Good-removebg-preview.png"
+                                width="60" height="60" />
+                        </h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1">
+                            <button class="nav-item btn btn-color">
+                                <a class="nav-link btn-txt" aria-current="page"
+                                    href="#">Dashboard</a>
+                            </button>
+                            <button class="nav-item btn btn-color">
+                                <a class="nav-link btn-txt" aria-current="page"
+                                    href="#">แลกแต้ม</a>
+                            </button>
+                            <button class="nav-item btn btn-color">
+                                <a class="nav-link btn-txt" aria-current="page"
+                                    href="#">ทิ้งขยะอย่างไร ?</a>
+                            </button>
+                            <button class="nav-item btn btn-color">
+                                <a class="nav-link btn-txt" aria-current="page"
+                                    href="#">แคมเปญ</a>
+                            </button>
+                            <button class="nav-item btn btn-color">
+                                <a class="nav-link btn-txt" aria-current="page"
+                                    href="#">ออกจากระบบ</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="container">
-            <h2 class="text-center">
-                Redeem rewards
-            </h2>
-            <div class="row mt-4">
-                <div class="col-2 text-center bg-info">
-                    <h4>Reward</h4>
+            <h1 class="color-green1 text-center mt-5 mb-2">Redeem<span
+                    class="color-green2">reward</span></h1>
+            <div class="row mt-5">
+                <div class="col-2 text-center btn-3">
+                    <h4 class="text-white">Reward</h4>
                 </div>
-                <div class="col-2 text-center">
+                <div class="col-2 text-center" style="color:#0040BD;">
                     <h4>History</h4>
                 </div>
                 <div class="col-8">
@@ -51,7 +84,7 @@
 
             </div>
             <hr class="border border-dark" style="margin-top:0px; ">
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-4">
                     <img
                         src="https://cdn.discordapp.com/attachments/876025140490698753/1097219640482086993/image.png"
@@ -84,7 +117,8 @@
                 </div>
                 <div class="col-8">
                     <div class="row mt-5">
-                        <p class="fs-5">ส่วนลด 120 บาท เมื่อสั่งอาหาร 300 บาทขึ้นไป ผ่าน LINE MAN</p>
+                        <p class="fs-5">ส่วนลด 120 บาท เมื่อสั่งอาหาร 300
+                            บาทขึ้นไป ผ่าน LINE MAN</p>
                     </div>
                     <div class="row">
                         <div class="d-inline">
@@ -103,4 +137,56 @@
             </div>
         </div>
     </body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&display=swap');
+      
+        .font {
+          font-family: 'IBM Plex Sans Thai', sans-serif;
+        }
+      
+        .color-green1 {
+          color: #04A952;
+        }
+      
+        .color-green2 {
+          color: #09BD87;
+        }
+      
+        .btn-color {
+          background-image: linear-gradient(to right, #5DCB62 0%, #5784DA 51%, #5DCB62 100%);
+          margin: 15px;
+          text-align: center;
+          background-size: 200% auto;
+          box-shadow: 0 0 5px 0 #717171;
+          border-radius: 50px;
+          display: block;
+        }
+      
+        .btn-txt {
+          font-size: 20px;
+          color: #fff;
+          font-weight: 500;
+        }
+      
+        .txt-blue1 {
+          font-size: 28px;
+          color: #0040BD;
+        }
+      
+        .txt-blue2 {
+          font-size: 30px;
+          color: #5083E6;
+        }
+        .txt-black {
+          font-size: 28px;
+          color: #3d3d3d;
+          font-weight: 500;
+        }
+        .txt-m{
+          margin-left: 100px;
+        }
+        .btn-3 {
+  background-image: linear-gradient(to right, #49D7CE 0%, #5784DA 100%);
+}
+      </style>
 </html>
