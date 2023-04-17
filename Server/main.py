@@ -1,18 +1,15 @@
-import os
-from flask import Flask, render_template
+from fastapi import FastAPI, Request
+from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse
 
-app = Flask(__name__,template_folder="")
+app = FastAPI()
+templates = Jinja2Templates(directory="../Web")
+
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
+	return templates.TemplateResponse("index.html",{"request":request})
 
 
-@app.route('/')
-def home():
-   
-   env_var_colour = os.environ['APP_COLOR']
-   
-   return render_template("index.html")
-    
-
-    
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0",port="8088")
+@app.get("/test", response_class=HTMLResponse)
+async def home(request: Request):
+	return templates.TemplateResponse("reward.html",{"request":request})
