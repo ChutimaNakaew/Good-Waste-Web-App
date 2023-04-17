@@ -5,6 +5,7 @@ from fastapi.responses import HTMLResponse
 app = FastAPI()
 # templates = Jinja2Templates(directory="Server")
 
+from pathlib import Path
 BASE_PATH = Path(__file__).resolve().parent
 templates = Jinja2Templates(directory=str(BASE_PATH / "Web"))
 
