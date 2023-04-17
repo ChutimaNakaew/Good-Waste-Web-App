@@ -5,10 +5,9 @@ from fastapi.templating import Jinja2Templates
 from os.path import dirname, join
 
 current_dir = dirname(__file__) 
-templates = join(current_dir, 'Web')
+templates = Jinja2Templates(join(current_dir, 'Web'))
 
 app = FastAPI()
-
 
 @app.get("/test")
 async def test(request: Request):
