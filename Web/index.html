@@ -31,7 +31,7 @@
               <a class="nav-link btn-txt" aria-current="page" href="#">Dashboard</a>
             </button>
             <button class="nav-item btn btn-color">
-              <a class="nav-link btn-txt" aria-current="page" onclick="select()">แลกแต้ม</a>
+              <a class="nav-link btn-txt" aria-current="page" href="http://23.22.134.190:8081/reward.html">แลกแต้ม</a>
             </button>
             <button class="nav-item btn btn-color">
               <a class="nav-link btn-txt" aria-current="page" href="#">ทิ้งขยะอย่างไร ?</a>
@@ -87,7 +87,7 @@
 </script>
 <script>
 	  function select() {
-			fetch("http://23.22.134.190/:8088/reward", {
+			fetch("http://23.22.134.190:8088/reward", {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json"
