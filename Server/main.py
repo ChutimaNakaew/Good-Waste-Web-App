@@ -2,12 +2,8 @@ import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 
-from os.path import dirname, join
-
-current_dir = dirname(__file__) 
-templates = Jinja2Templates(join(current_dir, 'Web'))
-
 app = FastAPI()
+templates = Jinja2Templates(directory="../Web")
 
 @app.get("/test")
 async def test(request: Request):
