@@ -6,3 +6,4 @@ Pillow
 numpy
 matplotlib
 jinja2
+flask
