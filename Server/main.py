@@ -7,11 +7,11 @@ app = FastAPI()
 
 from pathlib import Path
 BASE_PATH = Path(__file__).resolve().parent
-templates = Jinja2Templates(directory=str(BASE_PATH))
+templates = Jinja2Templates(directory=str(BASE_PATH / "template"))
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-	return templates.TemplateResponse("index.html",{"request":request})
+	return templates.TemplateResponse("employee.html",{"request":request})
 
 
 @app.get("/reward", response_class=HTMLResponse)
