@@ -3,7 +3,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 
 app = FastAPI()
-# templates = Jinja2Templates(directory="Server")
+templates = Jinja2Templates(directory="Server")
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
@@ -12,4 +12,4 @@ async def home(request: Request):
 
 @app.get("/reward", response_class=HTMLResponse)
 async def home(request: Request):
-	return TemplateResponse("reward.html",{"request":request})
+	return templates.TemplateResponse("reward.html",{"request":request})
