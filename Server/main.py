@@ -4,7 +4,7 @@ from fastapi.templating import Jinja2Templates
 
 
 app = FastAPI()
-templates = Jinja2Templates(directory="../Web")
+templates = Jinja2Templates(directory="Web")
 
 @app.get("/test")
 async def test(request: Request):
