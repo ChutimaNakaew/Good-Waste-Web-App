@@ -8,7 +8,7 @@ templates = Jinja2Templates(directory="../Web")
 
 @app.get("/test")
 async def test(request: Request):
-	return "employee.html"
+	return employee.html
 
 @app.get("/")
 async def home(request: Request):
